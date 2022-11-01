@@ -10,21 +10,45 @@
 </head>
 <body>
     <script src="./js/requirements.js"></script>
-    <script src="./js/player-zombie.js"></script>
+    <!--<script src="./js/player-zombie.js"></script>-->
     <h1>Zombie Apocalypse Simulator</h1>
     <h2 id="text1">You wake up, just like any normal morning, and begin getting ready for work.</h2>
-    <input type="checkbox" id="getUp" name="getUp" onclick="check();">
+    <input type="checkbox" id="getUp" name="getUp">
     <label for="getUp">Get up</label><br>
     
-    <input type="checkbox" id="getDressed" name="getDressed" onclick="check();">
+    <input type="checkbox" id="getDressed" name="getDressed">
     <label for="getDressed">Get dressed</label><br>
 
-    <input type="checkbox" id="brushTeeth" name="brushTeeth" onclick="check();">
+    <input type="checkbox" id="brushTeeth" name="brushTeeth">
     <label for="brushTeeth">Brush teeth</label><br>
 
-    <input type="checkbox" id="eatBreak" name="eatBreak" onclick="check();">
+    <input type="checkbox" id="eatBreak" name="eatBreak">
     <label for="eatBreak">Eat breakfast</label><br>
 
-    <h2 id="t2">You begin making your way to the door to go to work. As you open then door, you notice that everything has been thrown into utter chaos, and there are zombies!</h2>
+    <button onclick="toggleVisibilityCheck('part2');">Go to work</button>
+
+    <div id="part2">
+        <h2>You begin making your way to the door to go to work. As you open then door, you notice that everything has been thrown into utter chaos, and there are zombies!</h2>
+        <h3>What do you do?</h3>
+        <a href="./pages/dead.html" id="link">Try to run to your car</a>
+        <br>
+        <a href ="#" onclick="toggleVisibility('part3');" id="link">Close the door and barricade it</a>
+    </div>
+
+    <div id="part3">
+        <h2>You are unsure what you should do at this point...</h2>
+        <a href="#" id="link" onclick="toggleVisibility('static');" name="part4">Turn on the news</a> 
+        <div id="static">The tv turns on, and all you see is static. Changing the channels does not help</div>
+        <br>
+        <a href ="#" onclick="toggleVisibility('call');toggleVisibility('continue1');" id="link" name="part4">Try to call your family</a> 
+        <div id="call">
+            You pick up the phone to call your mom, it goes to the ringer. Same for your dad<br>
+            <a href="./pages/page2.html" id="continue1">
+                <button href="./pages/page2.html">Continue</button>
+            </a>
+        </div>
+    </div>
+
+
 </body>
 </html>

@@ -8,7 +8,7 @@ wake up one morning, do normal routine
 
 as go out door, zombies!
 >close door, barricade
->run to car-zombie in back, brains get eaten 
+>run to car-zombie in back, you die!
 *go next(if chose close door)*
 
 >turn on news
@@ -22,6 +22,11 @@ hear noises
 front window breaks, zombie crawling in
 >fight zombie
 >retreat to different room(type garage, kitchen, bedroom, bathroom)
+
+
+!!!dying!!!
+if you die, you turn into a zombie! go fuck up someone elses morning - words of the prof
+
 
 
 

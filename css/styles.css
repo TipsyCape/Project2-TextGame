@@ -1,3 +1,7 @@
-#t2{
-    visibility: hidden;
+#part2, #part3, #static, #call, #continue1{
+    display: none;
+}
+
+#link{
+    color:black;
 }

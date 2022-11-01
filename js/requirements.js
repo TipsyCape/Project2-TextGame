@@ -1,30 +1,16 @@
-function check(){
-    let x =0;
-    if (document.getElementById('getUp').checked) {
-        console.log("getup checked");
-        x++;
+function toggleVisibilityCheck(id) {
+    if(document.getElementById('getUp').checked == true && document.getElementById('getDressed').checked == true && document.getElementById('brushTeeth').checked == true && document.getElementById('eatBreak').checked == true){ //crikey, isnt she a beauty?!
+        var e = document.getElementById(id);
+        e.style.display = 'block';
     }
-    if (document.getElementById('getDressed').checked) {
-        console.log("getdressed checked");
-        x++;
-    }
-    if (document.getElementById('brushTeeth').checked) {
-        console.log("brush checked");
-        x++;
-    }
-    if (document.getElementById('eatBreak').checked) {
-        console.log("checked");
-        x++;
-    }
-
-    if(x == 4){
-        toggleVisibility();
-    }
-    
 }
 
+function toggleVisibility(id) {
+    var e = document.getElementById(id);
+    e.style.display = 'block';
+}
 
-function toggleVisibility(){
-    var e = document.getElementById('t2');
-    e.style.visibility.toggle(); 
+function toggleVisibilityCheck2(name) {
+    var e = document.getElementsByName(name);
+    e.style.display = 'block';
 }
