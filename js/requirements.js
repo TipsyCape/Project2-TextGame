@@ -5,12 +5,17 @@ function toggleVisibilityCheck(id) {
     }
 }
 
+function toggleVisibilityOff(id) {
+    var k = document.getElementById(id);
+    k.style.display = 'none';
+}
+
 function toggleVisibility(id) {
     var e = document.getElementById(id);
     e.style.display = 'block';
 }
 
-function toggleVisibilityCheck2(name) {
-    var e = document.getElementsByName(name);
-    e.style.display = 'block';
+function zombie(){
+    var element = document.getElementById('all');
+    element.style.backgroundColor = "black";
 }

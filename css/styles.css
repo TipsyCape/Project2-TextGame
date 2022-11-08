@@ -1,7 +1,13 @@
-#part2, #part3, #static, #call, #continue1{
+#part2, #part3, #static, #call, #continue1, #continue2, #part4, #kitchen1, #kitchen2, #kitchen3, #garage1, #garage2, #garage3, #examine, #zombie, #ending, #drive{
     display: none;
 }
 
 #link{
     color:black;
+
+}
+
+#all{
+    background-color: white;
+    color: black;
 }
